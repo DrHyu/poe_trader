@@ -1,0 +1,6 @@
+# test_files/*
+test_output/*
+match_output/*
+configs
+__pycache__
+assets/new_currency_templates
