@@ -11,7 +11,7 @@ from log_parser import log_parser
 from uiactions import uiactions
 
 from inventory_model import inventory, bank
-from currency import Rates
+from rates import Rates
 
 logger = logging.getLogger('bot_log')
 
