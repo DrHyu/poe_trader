@@ -101,7 +101,7 @@ def main():
 
         # Path to the currency template
         template_path = download_img_url(
-            url, '../assets/new_currency_templates/' + name)
+            url, '../assets/currency_templates/' + name)
 
         template_path = re.sub("\.\.\/", "", template_path)
 
