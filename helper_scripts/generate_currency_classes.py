@@ -148,6 +148,8 @@ def main():
 
     text += all_curr
 
+    text += FOOTER
+
     for d in commented:
         print(commented[d]['class_name'])
         temp = CLASS_TEMPLATE.format(
@@ -213,6 +215,16 @@ class Currency():
     def __repr__(self):
         return self.pretty_name
 """
+
+FOOTER = """
+def curr_name_to_obj(name):
+    for curr in CURRENCY_LIST:
+        if curr.name == name:
+            return curr
+
+    return None
+"""
+
 
 if __name__ == '__main__':
 

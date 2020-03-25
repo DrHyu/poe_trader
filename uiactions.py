@@ -10,10 +10,10 @@ import copy
 import win32gui
 import win32clipboard
 
-import pyautogui as autogui
+import delayed_pyautogui as autogui
 from image_checker import VisionHelper as vh
 
-from inventory_model import inventory, bank, client_trade_window
+from inventory_model import inventory, bank, client_trade_window, currency_tab, listing_tab
 
 import config
 import currency
@@ -108,6 +108,30 @@ class ActionsHelper():
 
         return text
 
+    def clear_clipboard_text(self):
+
+        max_retries = 3
+        retries = 0
+        done = False
+
+        while not done:
+            try:
+                # Attempt to open clipboard
+                win32clipboard.OpenClipboard()
+                done = True
+
+            except Exception as exception:
+                if retries > max_retries:
+                    raise exception
+                else:
+                    logger.debug(
+                        "Failed to get clipboard, retrying {}/{}".format(retries, max_retries))
+                    retries += 1
+                    time.sleep(0.5)
+
+        win32clipboard.EmptyClipboard()
+        win32clipboard.CloseClipboard()
+
     ###################################
     # autogui stuff
     ###################################
@@ -122,7 +146,7 @@ class ActionsHelper():
 
         return self.get_clipboard_text()
 
-    def transfer_currency_stash_inv(self, curr, ammount):
+    def transfer_currency_stash_inv(self, curr, ammount, from_tab):
         '''
             Takes a list of currencies to be transfered into the inventory.
             Will take care of ammounts that are not aligned with stack size.
@@ -134,8 +158,11 @@ class ActionsHelper():
         # Check if stash is open, open it otherwise
         self.check_stash_open(open_otherwise=True)
 
+        # Go to the currency stash tab
+        self.go_to_tab(from_tab, check_stash_open=False)
+
         # Find the position of this currency in stash
-        matches = vh.find_currency_in_currency_tab([curr])
+        matches = vh.find_currency_in_stash_tab([curr], currency_tab)
         matches = matches[curr.name]
 
         # Check if it is possible
@@ -309,8 +336,100 @@ class ActionsHelper():
         autogui.moveTo(1, 1)
 
     def wiggle_mouse(self):
-        autogui.moveTo(1, 2)
-        autogui.moveTo(1, 1)
+
+        (x, y) = autogui.position()
+        autogui.moveTo(x+1, y+1)
+
+    def set_currency_rates(self, rates):
+        ''' set the rate for the requested currency '''
+
+        # Check we are in foreground, set otherwise
+        self.is_foreground(set_foreground=True)
+
+        # Check if stash is open, open it otherwise
+        self.check_stash_open(open_otherwise=True)
+
+        # Go to the currency stash tab
+        self.go_to_tab(listing_tab, check_stash_open=False)
+
+        for (curr, texts) in rates:
+
+            # Find all currency curr and the messages in text to each indiviudal currency
+
+            positions = vh.find_currency_in_stash_tab(
+                [curr], listing_tab)[curr.name]
+
+            # Assign a diferent text to each position
+            for pos, txt in zip(positions, texts):
+
+                autogui.moveTo(*pos)
+                # Double check we found the right currency
+
+                autogui.hotkey('ctrl', 'c')
+                found_curr, _ = self.process_item_description(
+                    self.get_clipboard_text())
+
+                if curr != found_curr:
+                    continue
+
+                autogui.click(button='right')
+
+                retries = 0
+                pos = None
+                while not pos and retries < 3:
+                    autogui.press('backspace')
+                    pos = vh.find_set_price_window()
+                    retries += 1
+
+                if not pos:
+                    logger.error(
+                        'Could not find price set window for {}'.format(curr.pretty_name))
+                    # reset mouse
+                    autogui.moveTo(1, 1)
+                    # click anywhere else to close the set currency window
+                    # just in case it was left open and couldn't be detected
+                    autogui.click()
+                    continue
+
+                set_price_win_x = pos[0][0][0]
+                set_price_win_y = pos[0][0][1]
+
+                set_price_win_w = pos[0][1][0] - set_price_win_x
+                set_price_win_h = pos[0][1][1] - set_price_win_y
+
+                text_field_pos = [set_price_win_x + set_price_win_w * config.PRICE_SET_WINDOW_TEXT_FIELD_REL_POS[0],
+                                  set_price_win_y + set_price_win_h * config.PRICE_SET_WINDOW_TEXT_FIELD_REL_POS[1]]
+
+                autogui.moveTo(*text_field_pos)
+                autogui.click()
+
+                autogui.typewrite(txt)
+
+                autogui.press('enter')
+
+                # reset mouse
+                autogui.moveTo(1, 1)
+                # click anywhere else to close the set currency window
+                # just in case it was left open and couldn't be detected
+                autogui.click()
+
+    def go_to_tab(self, tab, check_stash_open=False):
+        ''' navigate to tab number '''
+
+        if check_stash_open:
+            # Ensure stash is open
+            self.check_stash_open(open_otherwise=True)
+
+        # Navigate to the left-most tab
+        for _ in range(10):
+            autogui.hotkey('ctrl', 'left', d=0)
+
+        # Navigate to the requeste tab
+        for _ in range(tab.position):
+            autogui.hotkey('ctrl', 'right', d=0)
+
+        return True
+
     ###################################
     # chat stuff
     ###################################
@@ -407,7 +526,7 @@ class ActionsHelper():
     # other
     ###################################
 
-    def clean_inventory(self, force_sync=False, expected_items=None):
+    def clean_inventory(self, to_tab, force_sync=False, expected_items=None):
         '''
             Transfer back all items from inventory to stash.
             Move any trash item to recycle bin.
@@ -419,9 +538,15 @@ class ActionsHelper():
         # Check if stash is open, open it otherwise
         self.check_stash_open(open_otherwise=True)
 
+        # Go to the currency stash tab
+        self.go_to_tab(to_tab, check_stash_open=False)
+
         # Check if the inventory is synchronized
         if not inventory.synchronzed or force_sync:
             self.sync_inventory()
+
+        # Clear clipboard text
+        self.clear_clipboard_text()
 
         autogui.keyDown('ctrl')
 
@@ -443,19 +568,20 @@ class ActionsHelper():
                 autogui.moveTo(point_x, point_y)
                 autogui.click()
 
+                # Attempt to get item text at current position
+                autogui.press('c')
+                # If clipboard is not empty, the item didn't get transfered
+                if self.get_clipboard_text() != "":
+                    logger.error(
+                        'Could not remove item from inventory at position [{},{}]'.format(*slot))
+                    raise Exception
+
                 # Clear item from inventory
                 inventory.clear(*slot)
 
         autogui.keyUp('ctrl')
         # Reset mouse to avoid screen polution
         autogui.moveTo(1, 1)
-
-        # The picture gets disturbed by game notifications
-        # Double check to make sure it is empty
-        # empty_slots = vh.find_empty_slots_in_inventory()
-
-        # if len(empty_slots) != (config.INV_NUM_ROW * config.INV_NUM_COL):
-        #     raise CouldNotClearInventoryException
 
         return True
 
@@ -591,10 +717,14 @@ class ActionsHelper():
         # Check if stash is open, open it otherwise
         self.check_stash_open(open_otherwise=True)
 
+        # Go to the currency stash tab
+        self.go_to_tab(currency_tab, check_stash_open=False)
+
         logger.info("Starting bank sync ...")
 
         # Find currencies in stash tab
-        matches = vh.find_currency_in_currency_tab(currency.CURRENCY_LIST)
+        matches = vh.find_currency_in_stash_tab(
+            currency.CURRENCY_LIST, currency_tab)
 
         # For every currency kind
         for curr in currency.CURRENCY_LIST:
@@ -613,7 +743,7 @@ class ActionsHelper():
                     # assert(curr == found_curr)
                     # Image Capture is not 100% reliable
                     # If there is a missmtach ctrl+c wins
-                    if found_curr != None and found_curr != "":
+                    if found_curr != None and found_curr != "" and curr == found_curr:
                         temmp_stack = currency.CurrencyStack(
                             found_curr, found_ammount)
 
@@ -653,9 +783,9 @@ class ActionsHelperTest(unittest.TestCase):
             if remaining > 0:
                 num = random.randint(1, remaining)
                 self.ah.transfer_currency_stash_inv(
-                    curr, num)
+                    curr, num, currency_tab)
                 logger.info("Transfer {} {}".format(num, curr.pretty_name))
-        self.ah.clean_inventory()
+        self.ah.clean_inventory(currency_tab)
 
     def custom_test(self):
         ''' test clean inventory '''
@@ -664,7 +794,9 @@ class ActionsHelperTest(unittest.TestCase):
 
         # print(self.ah.invite_to_party("AppendixGone"))
 
-        print(self.ah.trade_request("AppendixGone"))
+        # print(self.ah.trade_request("AppendixGone"))
+
+        # self.ah.set_currency_rates(currency.ChaosOrb, "my name is bob")
 
         # print(self.ah.accept_trade())
         # self.ah.browse_over_customer_items()
@@ -681,7 +813,11 @@ class ActionsHelperTest(unittest.TestCase):
         # Check if stash is open, open it otherwise
         self.ah.check_stash_open(open_otherwise=True)
 
-        matches = vh.find_currency_in_currency_tab(currency.CURRENCY_LIST)
+        # Go to the currency stash tab
+        self.ah.go_to_tab(currency_tab, check_stash_open=False)
+
+        matches = vh.find_currency_in_stash_tab(
+            currency.CURRENCY_LIST, currency_tab)
 
         for curr in currency.CURRENCY_LIST:
             if curr.name in matches and matches[curr.name]:

@@ -10,8 +10,10 @@ from hideout import hideout
 from log_parser import log_parser
 from uiactions import uiactions
 
-from inventory_model import inventory, bank
-from rates import Rates
+from inventory_model import inventory, bank, currency_tab, listing_tab
+from rates import rates
+
+import config as cfg
 
 logger = logging.getLogger('bot_log')
 
@@ -34,7 +36,19 @@ class POE_bot():
         bank.sync_virtual_bank()
 
         # Empty inventory for a clean start
-        uiactions.clean_inventory()
+        uiactions.clean_inventory(currency_tab)
+
+        # Update trade rates
+        rates.update_rates()
+
+        # Physically update rates
+        uiactions.set_currency_rates(rates.get_rates_easy())
+
+        self.should_update_rates_timer = time.time()
+        self.should_update_rates = False
+        self.dont_afk_move_timer = time.time()
+        self.afk_timer = time.time()
+        self.should_afk = False
 
         logger.info("POE_bot initialization finished correctly !")
 
@@ -52,9 +66,31 @@ class POE_bot():
                 logger.debug("Do trade")
                 # Process 1 trade at a time
                 self.do_trade(next_player)
-            else:
-                time.sleep(1)
+
+            # Update currency timer
+            if not self.should_update_rates and time.time() - self.should_update_rates_timer > cfg.UPDATE_RATES_FREQUENCY:
+                self.should_update_rates = True
+            # If we should update and there are no pending customers
+            # Do the update
+            elif self.should_update_rates and not players.get_all():
+                rates.update_rates()
+                uiactions.set_currency_rates(rates.get_rates_easy())
+                self.should_update_rates = False
+                self.should_update_rates_timer = time.time()
+
+            # AFK Calcs
+            if not self.should_afk and time.time() - self.afk_timer > cfg.AFK_TIMER:
+                self.should_afk = True
+                self.afk_timer = time.time()
+            if self.should_afk and time.time() - self.afk_timer > cfg.AFK_DURATION:
+                self.should_afk = False
+                self.afk_timer = time.time()
+
+            if not self.should_afk and time.time() - self.dont_afk_move_timer > 60:
                 uiactions.wiggle_mouse()
+                self.dont_afk_move_timer = time.time()
+
+            time.sleep(1)
 
     def check_for_new_trade_req(self):
         '''
@@ -77,6 +113,12 @@ class POE_bot():
 
             # Fill out trade information
             new_player.add_trade_info(msg)
+
+            # If we have to update the rates
+            # don't accept any incoming trades
+            if self.should_update_rates:
+                new_player.wrong_offer_response()
+                continue
 
             # Check if trade makes sense
             (new_buy, new_sell) = new_player.get_trade_info()
@@ -154,7 +196,8 @@ class POE_bot():
                 (buy, sell) = ply.get_trade_info()
 
                 # Withrdraw money from brank
-                uiactions.transfer_currency_stash_inv(buy.curr, buy.ammount)
+                uiactions.transfer_currency_stash_inv(
+                    buy.curr, buy.ammount, currency_tab)
                 n_state = "TRADE_REQ"
 
             elif c_state == "TRADE_REQ":
@@ -270,7 +313,7 @@ class POE_bot():
 
             elif c_state == "DEPOSIT":
                 # Stash items in bank
-                uiactions.clean_inventory()
+                uiactions.clean_inventory(currency_tab)
 
                 # Sync virtual bank
                 # Aligns virtual with current bank
@@ -290,7 +333,7 @@ class POE_bot():
                 ply.kick()
 
                 # Return items to stash
-                uiactions.clean_inventory()
+                uiactions.clean_inventory(currency_tab)
 
                 # Sync virtual bank
                 # Aligns virtual with current bank
@@ -303,7 +346,7 @@ class POE_bot():
         # Do we win money ?
 
         # Check if trade matches the established rates
-        if not Rates.is_transaction_ok(buy, sell):
+        if not rates.is_transaction_ok(buy, sell):
             return False
 
         # The money that we would theoretically get from the exchange is not used

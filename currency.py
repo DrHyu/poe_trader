@@ -38,7 +38,7 @@ class ChaosOrb(Currency):
     pretty_name = "Chaos Orb"
     stack_size = 10
     regex = "Chaos Orb"
-    template_path = "assets/new_currency_templates/chaos_orb.png"
+    template_path = "assets/currency_templates/chaos_orb.png"
     size_x = 1
     size_y = 1
 
@@ -50,7 +50,7 @@ class ExaltedOrb(Currency):
     pretty_name = "Exalted Orb"
     stack_size = 10
     regex = "Exalted Orb"
-    template_path = "assets/new_currency_templates/exalted_orb.png"
+    template_path = "assets/currency_templates/exalted_orb.png"
     size_x = 1
     size_y = 1
 
@@ -62,7 +62,7 @@ class DivineOrb(Currency):
     pretty_name = "Divine Orb"
     stack_size = 10
     regex = "Divine Orb"
-    template_path = "assets/new_currency_templates/divine_orb.png"
+    template_path = "assets/currency_templates/divine_orb.png"
     size_x = 1
     size_y = 1
 
@@ -74,7 +74,7 @@ class OrbofAlchemy(Currency):
     pretty_name = "Orb of Alchemy"
     stack_size = 10
     regex = "Orb of Alchemy"
-    template_path = "assets/new_currency_templates/orb_of_alchemy.png"
+    template_path = "assets/currency_templates/orb_of_alchemy.png"
     size_x = 1
     size_y = 1
 
@@ -86,7 +86,7 @@ class OrbofFusing(Currency):
     pretty_name = "Orb of Fusing"
     stack_size = 20
     regex = "Orb of Fusing"
-    template_path = "assets/new_currency_templates/orb_of_fusing.png"
+    template_path = "assets/currency_templates/orb_of_fusing.png"
     size_x = 1
     size_y = 1
 
@@ -98,7 +98,7 @@ class OrbofAlteration(Currency):
     pretty_name = "Orb of Alteration"
     stack_size = 20
     regex = "Orb of Alteration"
-    template_path = "assets/new_currency_templates/orb_of_alteration.png"
+    template_path = "assets/currency_templates/orb_of_alteration.png"
     size_x = 1
     size_y = 1
 
@@ -110,7 +110,7 @@ class RegalOrb(Currency):
     pretty_name = "Regal Orb"
     stack_size = 10
     regex = "Regal Orb"
-    template_path = "assets/new_currency_templates/regal_orb.png"
+    template_path = "assets/currency_templates/regal_orb.png"
     size_x = 1
     size_y = 1
 
@@ -122,7 +122,7 @@ class VaalOrb(Currency):
     pretty_name = "Vaal Orb"
     stack_size = 10
     regex = "Vaal Orb"
-    template_path = "assets/new_currency_templates/vaal_orb.png"
+    template_path = "assets/currency_templates/vaal_orb.png"
     size_x = 1
     size_y = 1
 
@@ -134,7 +134,7 @@ class OrbofRegret(Currency):
     pretty_name = "Orb of Regret"
     stack_size = 40
     regex = "Orb of Regret"
-    template_path = "assets/new_currency_templates/orb_of_regret.png"
+    template_path = "assets/currency_templates/orb_of_regret.png"
     size_x = 1
     size_y = 1
 
@@ -146,7 +146,7 @@ class CartographerChisel(Currency):
     pretty_name = "Cartographer's Chisel"
     stack_size = 20
     regex = "Cartographer's Chisel"
-    template_path = "assets/new_currency_templates/cartographer_chisel.png"
+    template_path = "assets/currency_templates/cartographer_chisel.png"
     size_x = 1
     size_y = 1
 
@@ -158,7 +158,7 @@ class JewellerOrb(Currency):
     pretty_name = "Jeweller's Orb"
     stack_size = 20
     regex = "Jeweller's Orb"
-    template_path = "assets/new_currency_templates/jeweller_orb.png"
+    template_path = "assets/currency_templates/jeweller_orb.png"
     size_x = 1
     size_y = 1
 
@@ -170,7 +170,7 @@ class SilverCoin(Currency):
     pretty_name = "Silver Coin"
     stack_size = 30
     regex = "Silver Coin"
-    template_path = "assets/new_currency_templates/silver_coin.png"
+    template_path = "assets/currency_templates/silver_coin.png"
     size_x = 1
     size_y = 1
 
@@ -182,7 +182,7 @@ class PerandusCoin(Currency):
     pretty_name = "Perandus Coin"
     stack_size = 1000
     regex = "Perandus Coin"
-    template_path = "assets/new_currency_templates/perandus_coin.png"
+    template_path = "assets/currency_templates/perandus_coin.png"
     size_x = 1
     size_y = 1
 
@@ -194,7 +194,7 @@ class OrbofScouring(Currency):
     pretty_name = "Orb of Scouring"
     stack_size = 30
     regex = "Orb of Scouring"
-    template_path = "assets/new_currency_templates/orb_of_scouring.png"
+    template_path = "assets/currency_templates/orb_of_scouring.png"
     size_x = 1
     size_y = 1
 
@@ -206,7 +206,7 @@ class GemcutterPrism(Currency):
     pretty_name = "Gemcutter's Prism"
     stack_size = 20
     regex = "Gemcutter's Prism"
-    template_path = "assets/new_currency_templates/gemcutter_prism.png"
+    template_path = "assets/currency_templates/gemcutter_prism.png"
     size_x = 1
     size_y = 1
 
@@ -218,7 +218,7 @@ class OrbofChance(Currency):
     pretty_name = "Orb of Chance"
     stack_size = 20
     regex = "Orb of Chance"
-    template_path = "assets/new_currency_templates/orb_of_chance.png"
+    template_path = "assets/currency_templates/orb_of_chance.png"
     size_x = 1
     size_y = 1
 
@@ -230,7 +230,7 @@ class ChromaticOrb(Currency):
     pretty_name = "Chromatic Orb"
     stack_size = 20
     regex = "Chromatic Orb"
-    template_path = "assets/new_currency_templates/chromatic_orb.png"
+    template_path = "assets/currency_templates/chromatic_orb.png"
     size_x = 1
     size_y = 1
 
@@ -242,7 +242,7 @@ class BlessedOrb(Currency):
     pretty_name = "Blessed Orb"
     stack_size = 20
     regex = "Blessed Orb"
-    template_path = "assets/new_currency_templates/blessed_orb.png"
+    template_path = "assets/currency_templates/blessed_orb.png"
     size_x = 1
     size_y = 1
 
@@ -254,7 +254,7 @@ class GlassblowerBauble(Currency):
     pretty_name = "Glassblower's Bauble"
     stack_size = 20
     regex = "Glassblower's Bauble"
-    template_path = "assets/new_currency_templates/glassblower_bauble.png"
+    template_path = "assets/currency_templates/glassblower_bauble.png"
     size_x = 1
     size_y = 1
 
@@ -266,7 +266,7 @@ class OrbofAugmentation(Currency):
     pretty_name = "Orb of Augmentation"
     stack_size = 30
     regex = "Orb of Augmentation"
-    template_path = "assets/new_currency_templates/orb_of_augmentation.png"
+    template_path = "assets/currency_templates/orb_of_augmentation.png"
     size_x = 1
     size_y = 1
 
@@ -278,7 +278,7 @@ class OrbofTransmutation(Currency):
     pretty_name = "Orb of Transmutation"
     stack_size = 40
     regex = "Orb of Transmutation"
-    template_path = "assets/new_currency_templates/orb_of_transmutation.png"
+    template_path = "assets/currency_templates/orb_of_transmutation.png"
     size_x = 1
     size_y = 1
 
@@ -290,7 +290,7 @@ class MirrorofKalandra(Currency):
     pretty_name = "Mirror of Kalandra"
     stack_size = 10
     regex = "Mirror of Kalandra"
-    template_path = "assets/new_currency_templates/mirror_of_kalandra.png"
+    template_path = "assets/currency_templates/mirror_of_kalandra.png"
     size_x = 1
     size_y = 1
 
@@ -302,7 +302,7 @@ class ScrollofWisdom(Currency):
     pretty_name = "Scroll of Wisdom"
     stack_size = 40
     regex = "Scroll of Wisdom"
-    template_path = "assets/new_currency_templates/scroll_of_wisdom.png"
+    template_path = "assets/currency_templates/scroll_of_wisdom.png"
     size_x = 1
     size_y = 1
 
@@ -314,7 +314,7 @@ class PortalScroll(Currency):
     pretty_name = "Portal Scroll"
     stack_size = 40
     regex = "Portal Scroll"
-    template_path = "assets/new_currency_templates/portal_scroll.png"
+    template_path = "assets/currency_templates/portal_scroll.png"
     size_x = 1
     size_y = 1
 
@@ -326,7 +326,7 @@ class BlacksmithWhetstone(Currency):
     pretty_name = "Blacksmith's Whetstone"
     stack_size = 20
     regex = "Blacksmith's Whetstone"
-    template_path = "assets/new_currency_templates/blacksmith_whetstone.png"
+    template_path = "assets/currency_templates/blacksmith_whetstone.png"
     size_x = 1
     size_y = 1
 
@@ -338,7 +338,7 @@ class ArmourerScrap(Currency):
     pretty_name = "Armourer's Scrap"
     stack_size = 40
     regex = "Armourer's Scrap"
-    template_path = "assets/new_currency_templates/armourer_scrap.png"
+    template_path = "assets/currency_templates/armourer_scrap.png"
     size_x = 1
     size_y = 1
 
@@ -350,7 +350,7 @@ class EternalOrb(Currency):
     pretty_name = "Eternal Orb"
     stack_size = 10
     regex = "Eternal Orb"
-    template_path = "assets/new_currency_templates/eternal_orb.png"
+    template_path = "assets/currency_templates/eternal_orb.png"
     size_x = 1
     size_y = 1
 
@@ -362,7 +362,7 @@ class StackedDeck(Currency):
     pretty_name = "Stacked Deck"
     stack_size = 10
     regex = "Stacked Deck"
-    template_path = "assets/new_currency_templates/stacked_deck.png"
+    template_path = "assets/currency_templates/stacked_deck.png"
     size_x = 1
     size_y = 1
 
@@ -374,7 +374,7 @@ class SimpleSextant(Currency):
     pretty_name = "Simple Sextant"
     stack_size = 10
     regex = "Simple Sextant"
-    template_path = "assets/new_currency_templates/simple_sextant.png"
+    template_path = "assets/currency_templates/simple_sextant.png"
     size_x = 1
     size_y = 1
 
@@ -386,7 +386,7 @@ class PrimeSextant(Currency):
     pretty_name = "Prime Sextant"
     stack_size = 10
     regex = "Prime Sextant"
-    template_path = "assets/new_currency_templates/prime_sextant.png"
+    template_path = "assets/currency_templates/prime_sextant.png"
     size_x = 1
     size_y = 1
 
@@ -398,7 +398,7 @@ class AwakenedSextant(Currency):
     pretty_name = "Awakened Sextant"
     stack_size = 10
     regex = "Awakened Sextant"
-    template_path = "assets/new_currency_templates/awakened_sextant.png"
+    template_path = "assets/currency_templates/awakened_sextant.png"
     size_x = 1
     size_y = 1
 
@@ -410,7 +410,7 @@ class ApprenticeCartographerSeal(Currency):
     pretty_name = "Apprentice Cartographer's Seal"
     stack_size = 10
     regex = "Apprentice Cartographer's Seal"
-    template_path = "assets/new_currency_templates/apprentice_cartographer_seal.png"
+    template_path = "assets/currency_templates/apprentice_cartographer_seal.png"
     size_x = 1
     size_y = 1
 
@@ -422,7 +422,7 @@ class JourneymanCartographerSeal(Currency):
     pretty_name = "Journeyman Cartographer's Seal"
     stack_size = 10
     regex = "Journeyman Cartographer's Seal"
-    template_path = "assets/new_currency_templates/journeyman_cartographer_seal.png"
+    template_path = "assets/currency_templates/journeyman_cartographer_seal.png"
     size_x = 1
     size_y = 1
 
@@ -434,7 +434,7 @@ class MasterCartographerSeal(Currency):
     pretty_name = "Master Cartographer's Seal"
     stack_size = 10
     regex = "Master Cartographer's Seal"
-    template_path = "assets/new_currency_templates/master_cartographer_seal.png"
+    template_path = "assets/currency_templates/master_cartographer_seal.png"
     size_x = 1
     size_y = 1
 
@@ -446,7 +446,7 @@ class SplinterofXoph(Currency):
     pretty_name = "Splinter of Xoph"
     stack_size = 100
     regex = "Splinter of Xoph"
-    template_path = "assets/new_currency_templates/splinter_of_xoph.png"
+    template_path = "assets/currency_templates/splinter_of_xoph.png"
     size_x = 1
     size_y = 1
 
@@ -458,7 +458,7 @@ class SplinterofTul(Currency):
     pretty_name = "Splinter of Tul"
     stack_size = 100
     regex = "Splinter of Tul"
-    template_path = "assets/new_currency_templates/splinter_of_tul.png"
+    template_path = "assets/currency_templates/splinter_of_tul.png"
     size_x = 1
     size_y = 1
 
@@ -470,7 +470,7 @@ class SplinterofEsh(Currency):
     pretty_name = "Splinter of Esh"
     stack_size = 100
     regex = "Splinter of Esh"
-    template_path = "assets/new_currency_templates/splinter_of_esh.png"
+    template_path = "assets/currency_templates/splinter_of_esh.png"
     size_x = 1
     size_y = 1
 
@@ -482,7 +482,7 @@ class SplinterofUulNetol(Currency):
     pretty_name = "Splinter of Uul-Netol"
     stack_size = 100
     regex = "Splinter of Uul-Netol"
-    template_path = "assets/new_currency_templates/splinter_of_uul-netol.png"
+    template_path = "assets/currency_templates/splinter_of_uul-netol.png"
     size_x = 1
     size_y = 1
 
@@ -494,7 +494,7 @@ class SplinterofChayula(Currency):
     pretty_name = "Splinter of Chayula"
     stack_size = 100
     regex = "Splinter of Chayula"
-    template_path = "assets/new_currency_templates/splinter_of_chayula.png"
+    template_path = "assets/currency_templates/splinter_of_chayula.png"
     size_x = 1
     size_y = 1
 
@@ -506,7 +506,7 @@ class BlessingofXoph(Currency):
     pretty_name = "Blessing of Xoph"
     stack_size = 10
     regex = "Blessing of Xoph"
-    template_path = "assets/new_currency_templates/blessing_of_xoph.png"
+    template_path = "assets/currency_templates/blessing_of_xoph.png"
     size_x = 1
     size_y = 1
 
@@ -518,7 +518,7 @@ class BlessingofTul(Currency):
     pretty_name = "Blessing of Tul"
     stack_size = 10
     regex = "Blessing of Tul"
-    template_path = "assets/new_currency_templates/blessing_of_tul.png"
+    template_path = "assets/currency_templates/blessing_of_tul.png"
     size_x = 1
     size_y = 1
 
@@ -530,7 +530,7 @@ class BlessingofEsh(Currency):
     pretty_name = "Blessing of Esh"
     stack_size = 10
     regex = "Blessing of Esh"
-    template_path = "assets/new_currency_templates/blessing_of_esh.png"
+    template_path = "assets/currency_templates/blessing_of_esh.png"
     size_x = 1
     size_y = 1
 
@@ -542,7 +542,7 @@ class BlessingofUulNetol(Currency):
     pretty_name = "Blessing of Uul-Netol"
     stack_size = 10
     regex = "Blessing of Uul-Netol"
-    template_path = "assets/new_currency_templates/blessing_of_uul-netol.png"
+    template_path = "assets/currency_templates/blessing_of_uul-netol.png"
     size_x = 1
     size_y = 1
 
@@ -554,7 +554,7 @@ class BlessingofChayula(Currency):
     pretty_name = "Blessing of Chayula"
     stack_size = 10
     regex = "Blessing of Chayula"
-    template_path = "assets/new_currency_templates/blessing_of_chayula.png"
+    template_path = "assets/currency_templates/blessing_of_chayula.png"
     size_x = 1
     size_y = 1
 
@@ -566,7 +566,7 @@ class OrbofAnnulment(Currency):
     pretty_name = "Orb of Annulment"
     stack_size = 20
     regex = "Orb of Annulment"
-    template_path = "assets/new_currency_templates/orb_of_annulment.png"
+    template_path = "assets/currency_templates/orb_of_annulment.png"
     size_x = 1
     size_y = 1
 
@@ -578,7 +578,7 @@ class OrbofBinding(Currency):
     pretty_name = "Orb of Binding"
     stack_size = 20
     regex = "Orb of Binding"
-    template_path = "assets/new_currency_templates/orb_of_binding.png"
+    template_path = "assets/currency_templates/orb_of_binding.png"
     size_x = 1
     size_y = 1
 
@@ -590,7 +590,7 @@ class OrbofHorizons(Currency):
     pretty_name = "Orb of Horizons"
     stack_size = 20
     regex = "Orb of Horizons"
-    template_path = "assets/new_currency_templates/orb_of_horizons.png"
+    template_path = "assets/currency_templates/orb_of_horizons.png"
     size_x = 1
     size_y = 1
 
@@ -602,7 +602,7 @@ class HarbingerOrb(Currency):
     pretty_name = "Harbinger's Orb"
     stack_size = 20
     regex = "Harbinger's Orb"
-    template_path = "assets/new_currency_templates/harbinger_orb.png"
+    template_path = "assets/currency_templates/harbinger_orb.png"
     size_x = 1
     size_y = 1
 
@@ -614,7 +614,7 @@ class EngineerOrb(Currency):
     pretty_name = "Engineer's Orb"
     stack_size = 20
     regex = "Engineer's Orb"
-    template_path = "assets/new_currency_templates/engineer_orb.png"
+    template_path = "assets/currency_templates/engineer_orb.png"
     size_x = 1
     size_y = 1
 
@@ -626,7 +626,7 @@ class AncientOrb(Currency):
     pretty_name = "Ancient Orb"
     stack_size = 20
     regex = "Ancient Orb"
-    template_path = "assets/new_currency_templates/ancient_orb.png"
+    template_path = "assets/currency_templates/ancient_orb.png"
     size_x = 1
     size_y = 1
 
@@ -638,7 +638,7 @@ class AnnulmentShard(Currency):
     pretty_name = "Annulment Shard"
     stack_size = 20
     regex = "Annulment Shard"
-    template_path = "assets/new_currency_templates/annulment_shard.png"
+    template_path = "assets/currency_templates/annulment_shard.png"
     size_x = 1
     size_y = 1
 
@@ -650,7 +650,7 @@ class ExaltedShard(Currency):
     pretty_name = "Exalted Shard"
     stack_size = 20
     regex = "Exalted Shard"
-    template_path = "assets/new_currency_templates/exalted_shard.png"
+    template_path = "assets/currency_templates/exalted_shard.png"
     size_x = 1
     size_y = 1
 
@@ -662,7 +662,7 @@ class MirrorShard(Currency):
     pretty_name = "Mirror Shard"
     stack_size = 20
     regex = "Mirror Shard"
-    template_path = "assets/new_currency_templates/mirror_shard.png"
+    template_path = "assets/currency_templates/mirror_shard.png"
     size_x = 1
     size_y = 1
 
@@ -674,7 +674,7 @@ class TimelessKaruiSplinter(Currency):
     pretty_name = "Timeless Karui Splinter"
     stack_size = 100
     regex = "Timeless Karui Splinter"
-    template_path = "assets/new_currency_templates/timeless_karui_splinter.png"
+    template_path = "assets/currency_templates/timeless_karui_splinter.png"
     size_x = 1
     size_y = 1
 
@@ -686,7 +686,7 @@ class TimelessMarakethSplinter(Currency):
     pretty_name = "Timeless Maraketh Splinter"
     stack_size = 100
     regex = "Timeless Maraketh Splinter"
-    template_path = "assets/new_currency_templates/timeless_maraketh_splinter.png"
+    template_path = "assets/currency_templates/timeless_maraketh_splinter.png"
     size_x = 1
     size_y = 1
 
@@ -698,7 +698,7 @@ class TimelessEternalEmpireSplinter(Currency):
     pretty_name = "Timeless Eternal Empire Splinter"
     stack_size = 100
     regex = "Timeless Eternal Empire Splinter"
-    template_path = "assets/new_currency_templates/timeless_eternal_empire_splinter.png"
+    template_path = "assets/currency_templates/timeless_eternal_empire_splinter.png"
     size_x = 1
     size_y = 1
 
@@ -710,7 +710,7 @@ class TimelessTemplarSplinter(Currency):
     pretty_name = "Timeless Templar Splinter"
     stack_size = 100
     regex = "Timeless Templar Splinter"
-    template_path = "assets/new_currency_templates/timeless_templar_splinter.png"
+    template_path = "assets/currency_templates/timeless_templar_splinter.png"
     size_x = 1
     size_y = 1
 
@@ -722,7 +722,7 @@ class TimelessVaalSplinter(Currency):
     pretty_name = "Timeless Vaal Splinter"
     stack_size = 100
     regex = "Timeless Vaal Splinter"
-    template_path = "assets/new_currency_templates/timeless_vaal_splinter.png"
+    template_path = "assets/currency_templates/timeless_vaal_splinter.png"
     size_x = 1
     size_y = 1
 
@@ -734,7 +734,7 @@ class AwakenerOrb(Currency):
     pretty_name = "Awakener's Orb"
     stack_size = 10
     regex = "Awakener's Orb"
-    template_path = "assets/new_currency_templates/awakener_orb.png"
+    template_path = "assets/currency_templates/awakener_orb.png"
     size_x = 1
     size_y = 1
 
@@ -746,7 +746,7 @@ class CrusaderExaltedOrb(Currency):
     pretty_name = "Crusader's Exalted Orb"
     stack_size = 10
     regex = "Crusader's Exalted Orb"
-    template_path = "assets/new_currency_templates/crusader_exalted_orb.png"
+    template_path = "assets/currency_templates/crusader_exalted_orb.png"
     size_x = 1
     size_y = 1
 
@@ -758,7 +758,7 @@ class RedeemerExaltedOrb(Currency):
     pretty_name = "Redeemer's Exalted Orb"
     stack_size = 10
     regex = "Redeemer's Exalted Orb"
-    template_path = "assets/new_currency_templates/redeemer_exalted_orb.png"
+    template_path = "assets/currency_templates/redeemer_exalted_orb.png"
     size_x = 1
     size_y = 1
 
@@ -770,7 +770,7 @@ class HunterExaltedOrb(Currency):
     pretty_name = "Hunter's Exalted Orb"
     stack_size = 10
     regex = "Hunter's Exalted Orb"
-    template_path = "assets/new_currency_templates/hunter_exalted_orb.png"
+    template_path = "assets/currency_templates/hunter_exalted_orb.png"
     size_x = 1
     size_y = 1
 
@@ -782,7 +782,7 @@ class WarlordExaltedOrb(Currency):
     pretty_name = "Warlord's Exalted Orb"
     stack_size = 10
     regex = "Warlord's Exalted Orb"
-    template_path = "assets/new_currency_templates/warlord_exalted_orb.png"
+    template_path = "assets/currency_templates/warlord_exalted_orb.png"
     size_x = 1
     size_y = 1
 
@@ -794,7 +794,7 @@ class TurbulentCatalyst(Currency):
     pretty_name = "Turbulent Catalyst"
     stack_size = 10
     regex = "Turbulent Catalyst"
-    template_path = "assets/new_currency_templates/turbulent_catalyst.png"
+    template_path = "assets/currency_templates/turbulent_catalyst.png"
     size_x = 1
     size_y = 1
 
@@ -806,7 +806,7 @@ class ImbuedCatalyst(Currency):
     pretty_name = "Imbued Catalyst"
     stack_size = 10
     regex = "Imbued Catalyst"
-    template_path = "assets/new_currency_templates/imbued_catalyst.png"
+    template_path = "assets/currency_templates/imbued_catalyst.png"
     size_x = 1
     size_y = 1
 
@@ -818,7 +818,7 @@ class AbrasiveCatalyst(Currency):
     pretty_name = "Abrasive Catalyst"
     stack_size = 10
     regex = "Abrasive Catalyst"
-    template_path = "assets/new_currency_templates/abrasive_catalyst.png"
+    template_path = "assets/currency_templates/abrasive_catalyst.png"
     size_x = 1
     size_y = 1
 
@@ -830,7 +830,7 @@ class TemperingCatalyst(Currency):
     pretty_name = "Tempering Catalyst"
     stack_size = 10
     regex = "Tempering Catalyst"
-    template_path = "assets/new_currency_templates/tempering_catalyst.png"
+    template_path = "assets/currency_templates/tempering_catalyst.png"
     size_x = 1
     size_y = 1
 
@@ -842,7 +842,7 @@ class FertileCatalyst(Currency):
     pretty_name = "Fertile Catalyst"
     stack_size = 10
     regex = "Fertile Catalyst"
-    template_path = "assets/new_currency_templates/fertile_catalyst.png"
+    template_path = "assets/currency_templates/fertile_catalyst.png"
     size_x = 1
     size_y = 1
 
@@ -854,7 +854,7 @@ class PrismaticCatalyst(Currency):
     pretty_name = "Prismatic Catalyst"
     stack_size = 10
     regex = "Prismatic Catalyst"
-    template_path = "assets/new_currency_templates/prismatic_catalyst.png"
+    template_path = "assets/currency_templates/prismatic_catalyst.png"
     size_x = 1
     size_y = 1
 
@@ -866,7 +866,7 @@ class IntrinsicCatalyst(Currency):
     pretty_name = "Intrinsic Catalyst"
     stack_size = 10
     regex = "Intrinsic Catalyst"
-    template_path = "assets/new_currency_templates/intrinsic_catalyst.png"
+    template_path = "assets/currency_templates/intrinsic_catalyst.png"
     size_x = 1
     size_y = 1
 
@@ -878,7 +878,7 @@ class SimulacrumSplinter(Currency):
     pretty_name = "Simulacrum Splinter"
     stack_size = 300
     regex = "Simulacrum Splinter"
-    template_path = "assets/new_currency_templates/simulacrum_splinter.png"
+    template_path = "assets/currency_templates/simulacrum_splinter.png"
     size_x = 1
     size_y = 1
 
@@ -956,6 +956,15 @@ CURRENCY_LIST = [
     # IntrinsicCatalyst,
     # SimulacrumSplinter
 ]
+
+
+def name_to_curr(name):
+    for curr in CURRENCY_LIST:
+        if curr.name == name:
+            return curr
+
+    return None
+
 #class SacrificeatDusk(Currency):#
 #    ''' Sacrifice at Dusk '''#
 #
@@ -963,7 +972,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Sacrifice at Dusk"#
 #    stack_size = #
 #    regex = "Sacrifice at Dusk"#
-#    template_path = "assets/new_currency_templates/sacrifice_at_dusk.png"#
+#    template_path = "assets/currency_templates/sacrifice_at_dusk.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -975,7 +984,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Sacrifice at Midnight"#
 #    stack_size = #
 #    regex = "Sacrifice at Midnight"#
-#    template_path = "assets/new_currency_templates/sacrifice_at_midnight.png"#
+#    template_path = "assets/currency_templates/sacrifice_at_midnight.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -987,7 +996,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Sacrifice at Dawn"#
 #    stack_size = #
 #    regex = "Sacrifice at Dawn"#
-#    template_path = "assets/new_currency_templates/sacrifice_at_dawn.png"#
+#    template_path = "assets/currency_templates/sacrifice_at_dawn.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -999,7 +1008,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Sacrifice at Noon"#
 #    stack_size = #
 #    regex = "Sacrifice at Noon"#
-#    template_path = "assets/new_currency_templates/sacrifice_at_noon.png"#
+#    template_path = "assets/currency_templates/sacrifice_at_noon.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1011,7 +1020,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Mortal Grief"#
 #    stack_size = #
 #    regex = "Mortal Grief"#
-#    template_path = "assets/new_currency_templates/mortal_grief.png"#
+#    template_path = "assets/currency_templates/mortal_grief.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1023,7 +1032,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Mortal Rage"#
 #    stack_size = #
 #    regex = "Mortal Rage"#
-#    template_path = "assets/new_currency_templates/mortal_rage.png"#
+#    template_path = "assets/currency_templates/mortal_rage.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1035,7 +1044,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Mortal Ignorance"#
 #    stack_size = #
 #    regex = "Mortal Ignorance"#
-#    template_path = "assets/new_currency_templates/mortal_ignorance.png"#
+#    template_path = "assets/currency_templates/mortal_ignorance.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1047,7 +1056,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Mortal Hope"#
 #    stack_size = #
 #    regex = "Mortal Hope"#
-#    template_path = "assets/new_currency_templates/mortal_hope.png"#
+#    template_path = "assets/currency_templates/mortal_hope.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1059,7 +1068,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Eber's Key"#
 #    stack_size = #
 #    regex = "Eber's Key"#
-#    template_path = "assets/new_currency_templates/eber_key.png"#
+#    template_path = "assets/currency_templates/eber_key.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1071,7 +1080,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Yriel's Key"#
 #    stack_size = #
 #    regex = "Yriel's Key"#
-#    template_path = "assets/new_currency_templates/yriel_key.png"#
+#    template_path = "assets/currency_templates/yriel_key.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1083,7 +1092,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Inya's Key"#
 #    stack_size = #
 #    regex = "Inya's Key"#
-#    template_path = "assets/new_currency_templates/inya_key.png"#
+#    template_path = "assets/currency_templates/inya_key.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1095,7 +1104,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Volkuur's Key"#
 #    stack_size = #
 #    regex = "Volkuur's Key"#
-#    template_path = "assets/new_currency_templates/volkuur_key.png"#
+#    template_path = "assets/currency_templates/volkuur_key.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1107,7 +1116,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Fragment of the Hydra"#
 #    stack_size = #
 #    regex = "Fragment of the Hydra"#
-#    template_path = "assets/new_currency_templates/fragment_of_the_hydra.png"#
+#    template_path = "assets/currency_templates/fragment_of_the_hydra.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1119,7 +1128,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Fragment of the Phoenix"#
 #    stack_size = #
 #    regex = "Fragment of the Phoenix"#
-#    template_path = "assets/new_currency_templates/fragment_of_the_phoenix.png"#
+#    template_path = "assets/currency_templates/fragment_of_the_phoenix.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1131,7 +1140,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Fragment of the Minotaur"#
 #    stack_size = #
 #    regex = "Fragment of the Minotaur"#
-#    template_path = "assets/new_currency_templates/fragment_of_the_minotaur.png"#
+#    template_path = "assets/currency_templates/fragment_of_the_minotaur.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1143,7 +1152,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Fragment of the Chimera"#
 #    stack_size = #
 #    regex = "Fragment of the Chimera"#
-#    template_path = "assets/new_currency_templates/fragment_of_the_chimera.png"#
+#    template_path = "assets/currency_templates/fragment_of_the_chimera.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1155,7 +1164,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Offering to the Goddess"#
 #    stack_size = #
 #    regex = "Offering to the Goddess"#
-#    template_path = "assets/new_currency_templates/offering_to_the_goddess.png"#
+#    template_path = "assets/currency_templates/offering_to_the_goddess.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1167,7 +1176,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Sacrifice Set"#
 #    stack_size = #
 #    regex = "Sacrifice Set"#
-#    template_path = "assets/new_currency_templates/sacrifice_set.png"#
+#    template_path = "assets/currency_templates/sacrifice_set.png"#
 #    size_x = 2#
 #    size_y = 2#
 #
@@ -1179,7 +1188,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Mortal Set"#
 #    stack_size = #
 #    regex = "Mortal Set"#
-#    template_path = "assets/new_currency_templates/mortal_set.png"#
+#    template_path = "assets/currency_templates/mortal_set.png"#
 #    size_x = 2#
 #    size_y = 2#
 #
@@ -1191,7 +1200,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Pale Court Set"#
 #    stack_size = #
 #    regex = "Pale Court Set"#
-#    template_path = "assets/new_currency_templates/pale_court_set.png"#
+#    template_path = "assets/currency_templates/pale_court_set.png"#
 #    size_x = 2#
 #    size_y = 2#
 #
@@ -1203,7 +1212,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Shaper Set"#
 #    stack_size = #
 #    regex = "Shaper Set"#
-#    template_path = "assets/new_currency_templates/shaper_set.png"#
+#    template_path = "assets/currency_templates/shaper_set.png"#
 #    size_x = 2#
 #    size_y = 2#
 #
@@ -1215,7 +1224,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Xoph's Breachstone"#
 #    stack_size = #
 #    regex = "Xoph's Breachstone"#
-#    template_path = "assets/new_currency_templates/xoph_breachstone.png"#
+#    template_path = "assets/currency_templates/xoph_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1227,7 +1236,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Tul's Breachstone"#
 #    stack_size = #
 #    regex = "Tul's Breachstone"#
-#    template_path = "assets/new_currency_templates/tul_breachstone.png"#
+#    template_path = "assets/currency_templates/tul_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1239,7 +1248,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Esh's Breachstone"#
 #    stack_size = #
 #    regex = "Esh's Breachstone"#
-#    template_path = "assets/new_currency_templates/esh_breachstone.png"#
+#    template_path = "assets/currency_templates/esh_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1251,7 +1260,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Uul-Netol's Breachstone"#
 #    stack_size = #
 #    regex = "Uul-Netol's Breachstone"#
-#    template_path = "assets/new_currency_templates/uul-netol_breachstone.png"#
+#    template_path = "assets/currency_templates/uul-netol_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1263,7 +1272,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Chayula's Breachstone"#
 #    stack_size = #
 #    regex = "Chayula's Breachstone"#
-#    template_path = "assets/new_currency_templates/chayula_breachstone.png"#
+#    template_path = "assets/currency_templates/chayula_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1275,7 +1284,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Ancient Reliquary Key"#
 #    stack_size = #
 #    regex = "Ancient Reliquary Key"#
-#    template_path = "assets/new_currency_templates/ancient_reliquary_key.png"#
+#    template_path = "assets/currency_templates/ancient_reliquary_key.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1287,7 +1296,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Divine Vessel"#
 #    stack_size = #
 #    regex = "Divine Vessel"#
-#    template_path = "assets/new_currency_templates/divine_vessel.png"#
+#    template_path = "assets/currency_templates/divine_vessel.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1299,7 +1308,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Timeworn Reliquary Key"#
 #    stack_size = #
 #    regex = "Timeworn Reliquary Key"#
-#    template_path = "assets/new_currency_templates/timeworn_reliquary_key.png"#
+#    template_path = "assets/currency_templates/timeworn_reliquary_key.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1311,7 +1320,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Xoph's Charged Breachstone"#
 #    stack_size = #
 #    regex = "Xoph's Charged Breachstone"#
-#    template_path = "assets/new_currency_templates/xoph_charged_breachstone.png"#
+#    template_path = "assets/currency_templates/xoph_charged_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1323,7 +1332,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Tul's Charged Breachstone"#
 #    stack_size = #
 #    regex = "Tul's Charged Breachstone"#
-#    template_path = "assets/new_currency_templates/tul_charged_breachstone.png"#
+#    template_path = "assets/currency_templates/tul_charged_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1335,7 +1344,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Esh's Charged Breachstone"#
 #    stack_size = #
 #    regex = "Esh's Charged Breachstone"#
-#    template_path = "assets/new_currency_templates/esh_charged_breachstone.png"#
+#    template_path = "assets/currency_templates/esh_charged_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1347,7 +1356,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Uul-Netol's Charged Breachstone"#
 #    stack_size = #
 #    regex = "Uul-Netol's Charged Breachstone"#
-#    template_path = "assets/new_currency_templates/uul-netol_charged_breachstone.png"#
+#    template_path = "assets/currency_templates/uul-netol_charged_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1359,7 +1368,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Chayula's Charged Breachstone"#
 #    stack_size = #
 #    regex = "Chayula's Charged Breachstone"#
-#    template_path = "assets/new_currency_templates/chayula_charged_breachstone.png"#
+#    template_path = "assets/currency_templates/chayula_charged_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1371,7 +1380,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Xoph's Enriched Breachstone"#
 #    stack_size = #
 #    regex = "Xoph's Enriched Breachstone"#
-#    template_path = "assets/new_currency_templates/xoph_enriched_breachstone.png"#
+#    template_path = "assets/currency_templates/xoph_enriched_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1383,7 +1392,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Tul's Enriched Breachstone"#
 #    stack_size = #
 #    regex = "Tul's Enriched Breachstone"#
-#    template_path = "assets/new_currency_templates/tul_enriched_breachstone.png"#
+#    template_path = "assets/currency_templates/tul_enriched_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1395,7 +1404,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Esh's Enriched Breachstone"#
 #    stack_size = #
 #    regex = "Esh's Enriched Breachstone"#
-#    template_path = "assets/new_currency_templates/esh_enriched_breachstone.png"#
+#    template_path = "assets/currency_templates/esh_enriched_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1407,7 +1416,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Uul-Netol's Enriched Breachstone"#
 #    stack_size = #
 #    regex = "Uul-Netol's Enriched Breachstone"#
-#    template_path = "assets/new_currency_templates/uul-netol_enriched_breachstone.png"#
+#    template_path = "assets/currency_templates/uul-netol_enriched_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1419,7 +1428,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Chayula's Enriched Breachstone"#
 #    stack_size = #
 #    regex = "Chayula's Enriched Breachstone"#
-#    template_path = "assets/new_currency_templates/chayula_enriched_breachstone.png"#
+#    template_path = "assets/currency_templates/chayula_enriched_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1431,7 +1440,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Xoph's Pure Breachstone"#
 #    stack_size = #
 #    regex = "Xoph's Pure Breachstone"#
-#    template_path = "assets/new_currency_templates/xoph_pure_breachstone.png"#
+#    template_path = "assets/currency_templates/xoph_pure_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1443,7 +1452,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Tul's Pure Breachstone"#
 #    stack_size = #
 #    regex = "Tul's Pure Breachstone"#
-#    template_path = "assets/new_currency_templates/tul_pure_breachstone.png"#
+#    template_path = "assets/currency_templates/tul_pure_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1455,7 +1464,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Esh's Pure Breachstone"#
 #    stack_size = #
 #    regex = "Esh's Pure Breachstone"#
-#    template_path = "assets/new_currency_templates/esh_pure_breachstone.png"#
+#    template_path = "assets/currency_templates/esh_pure_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1467,7 +1476,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Uul-Netol's Pure Breachstone"#
 #    stack_size = #
 #    regex = "Uul-Netol's Pure Breachstone"#
-#    template_path = "assets/new_currency_templates/uul-netol_pure_breachstone.png"#
+#    template_path = "assets/currency_templates/uul-netol_pure_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1479,7 +1488,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Chayula's Pure Breachstone"#
 #    stack_size = #
 #    regex = "Chayula's Pure Breachstone"#
-#    template_path = "assets/new_currency_templates/chayula_pure_breachstone.png"#
+#    template_path = "assets/currency_templates/chayula_pure_breachstone.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1491,7 +1500,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Timeless Karui Emblem"#
 #    stack_size = #
 #    regex = "Timeless Karui Emblem"#
-#    template_path = "assets/new_currency_templates/timeless_karui_emblem.png"#
+#    template_path = "assets/currency_templates/timeless_karui_emblem.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1503,7 +1512,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Timeless Maraketh Emblem"#
 #    stack_size = #
 #    regex = "Timeless Maraketh Emblem"#
-#    template_path = "assets/new_currency_templates/timeless_maraketh_emblem.png"#
+#    template_path = "assets/currency_templates/timeless_maraketh_emblem.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1515,7 +1524,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Timeless Eternal Emblem"#
 #    stack_size = #
 #    regex = "Timeless Eternal Emblem"#
-#    template_path = "assets/new_currency_templates/timeless_eternal_emblem.png"#
+#    template_path = "assets/currency_templates/timeless_eternal_emblem.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1527,7 +1536,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Timeless Templar Emblem"#
 #    stack_size = #
 #    regex = "Timeless Templar Emblem"#
-#    template_path = "assets/new_currency_templates/timeless_templar_emblem.png"#
+#    template_path = "assets/currency_templates/timeless_templar_emblem.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1539,7 +1548,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Timeless Vaal Emblem"#
 #    stack_size = #
 #    regex = "Timeless Vaal Emblem"#
-#    template_path = "assets/new_currency_templates/timeless_vaal_emblem.png"#
+#    template_path = "assets/currency_templates/timeless_vaal_emblem.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1551,7 +1560,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Fragment of Enslavement"#
 #    stack_size = #
 #    regex = "Fragment of Enslavement"#
-#    template_path = "assets/new_currency_templates/fragment_of_enslavement.png"#
+#    template_path = "assets/currency_templates/fragment_of_enslavement.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1563,7 +1572,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Fragment of Eradication"#
 #    stack_size = #
 #    regex = "Fragment of Eradication"#
-#    template_path = "assets/new_currency_templates/fragment_of_eradication.png"#
+#    template_path = "assets/currency_templates/fragment_of_eradication.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1575,7 +1584,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Fragment of Constriction"#
 #    stack_size = #
 #    regex = "Fragment of Constriction"#
-#    template_path = "assets/new_currency_templates/fragment_of_constriction.png"#
+#    template_path = "assets/currency_templates/fragment_of_constriction.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1587,7 +1596,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Fragment of Purification"#
 #    stack_size = #
 #    regex = "Fragment of Purification"#
-#    template_path = "assets/new_currency_templates/fragment_of_purification.png"#
+#    template_path = "assets/currency_templates/fragment_of_purification.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1599,7 +1608,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Fragment of Shape"#
 #    stack_size = #
 #    regex = "Fragment of Shape"#
-#    template_path = "assets/new_currency_templates/fragment_of_shape.png"#
+#    template_path = "assets/currency_templates/fragment_of_shape.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1611,7 +1620,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Fragment of Knowledge"#
 #    stack_size = #
 #    regex = "Fragment of Knowledge"#
-#    template_path = "assets/new_currency_templates/fragment_of_knowledge.png"#
+#    template_path = "assets/currency_templates/fragment_of_knowledge.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1623,7 +1632,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Fragment of Terror"#
 #    stack_size = #
 #    regex = "Fragment of Terror"#
-#    template_path = "assets/new_currency_templates/fragment_of_terror.png"#
+#    template_path = "assets/currency_templates/fragment_of_terror.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1635,7 +1644,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Fragment of Emptiness"#
 #    stack_size = #
 #    regex = "Fragment of Emptiness"#
-#    template_path = "assets/new_currency_templates/fragment_of_emptiness.png"#
+#    template_path = "assets/currency_templates/fragment_of_emptiness.png"#
 #    size_x = 1#
 #    size_y = 1#
 #
@@ -1647,7 +1656,7 @@ CURRENCY_LIST = [
 #    pretty_name = "Simulacrum"#
 #    stack_size = #
 #    regex = "Simulacrum"#
-#    template_path = "assets/new_currency_templates/simulacrum.png"#
+#    template_path = "assets/currency_templates/simulacrum.png"#
 #    size_x = 1#
 #    size_y = 1#
 #

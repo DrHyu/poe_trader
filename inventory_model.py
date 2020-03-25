@@ -312,6 +312,21 @@ class Bank():
         return ret
 
 
+class StashTab():
+
+    CURRENCY_TAB_KIND = 0
+    NORMAL_TAB_KIND = 1
+    QUAD_TAB_KIND = 2
+
+    def __init__(self, kind, position):
+        self.kind = kind
+        self.position = position
+
+
 client_trade_window = ClientTradeWindow()
 inventory = Inventory()
 bank = Bank()
+
+currency_tab = StashTab(StashTab.CURRENCY_TAB_KIND, cfg.CURRENCY_STASH_TAB_N)
+listing_tab = StashTab(StashTab.NORMAL_TAB_KIND,
+                       cfg.CURRENCY_LISTING_STASH_TAB_N)

@@ -8,7 +8,6 @@ from enum import Enum
 from threading import Thread, Event
 from time import sleep, monotonic, time
 
-
 logger = logging.getLogger('bot_log')
 
 

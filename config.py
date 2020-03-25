@@ -57,14 +57,35 @@ QUAD_TAB_X_OFFSET = 0
 QUAD_TAB_Y_OFFSET = 0
 
 
+PRICE_SET_WINDOW_TEXT_FIELD_REL_POS = [0.4, 0.5]
+
+
+##################################
+# trade                          #
+##################################
+
+MIN_TRADE_VALUE = 10
+MIN_TRADE_PROFIT_PERCENT = 0.02
+MAX_TRADE_PROFIT_FLAT = 3
+
+
+CURRENCY_STASH_TAB_N = 0
+CURRENCY_LISTING_STASH_TAB_N = 1
+
 ##################################
 # others                         #
 ##################################
 
 CURR_STASH_TEMPLATE_RESIZE_FACTOR = 0.9
+NORMAL_STASH_TEMPLATE_RESIZE_FACTOR = 1.125
 INVENTORY_TEMPLATE_RESIZE_FACTOR = 1.125
 TRADE_WINDOW_TEMPLATE_RESIZE_FACTOR = 1.125
 
+
+AFK_TIMER = 30 * 60  # 30 mins
+AFK_DURATION = 5 * 60  # 5 MINS
+
+UPDATE_RATES_FREQUENCY = 30 * 60
 
 # % points where there is an item slot in the currency tab
 CURR_STASH_TAB_DESCRIPTION = [
